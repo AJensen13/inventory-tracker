@@ -1,0 +1,36 @@
+{
+  "name": "inventory-tracker",
+  "version": "1.0.0",
+  "description": "app to track inventory of household food",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJensen13/inventory-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJensen13/inventory-tracker/issues"
+  },
+  "homepage": "https://github.com/AJensen13/inventory-tracker#readme",
+  "dependencies": {
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-preset-react": "6.24.1",
+    "bootstrap": "4.1.1",
+    "express": "4.16.3",
+    "mongoose": "5.0.17",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-hot-loader": "4.1.2",
+    "react-redux": "5.0.7",
+    "react-router": "4.2.0",
+    "redux": "4.0.0",
+    "webpack": "4.7.0"
+  }
+}
