@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'build')
     },
     devtool: '#sourcemap',
+    mode: 'development',
     module: {
         rules: [
             {
