@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './app.scss';
+import { Container } from '../storage-container/container.jsx';
 
-ReactDOM.render(<div>
-  React Quickly 
-  was published in 2017. It's awesome!
-  </div>,
-  document.getElementById('app'))
+class App extends React.Component {
+  render() {
+    return <div><Container /></div>;
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'));

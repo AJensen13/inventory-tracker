@@ -7,15 +7,28 @@ module.exports = {
         path: path.resolve(__dirname, 'build')
     },
     devtool: '#sourcemap',
+    devServer: {
+      contentBase: './build'
+    },
     mode: 'development',
     module: {
         rules: [
             {
-                test: /\.css$/ ,
+                test: /\.(scss)$/ ,
                 use: [
                     { loader: 'style-loader' },
-                    { loader: 'sass-loader' },
-                    { loader: 'css-loader' }
+                    { loader: 'css-loader' },
+                    { loader: 'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('precss'),
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    },
+                    { loader: 'sass-loader' }
                 ]
             },
             {
